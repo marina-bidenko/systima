@@ -39,15 +39,18 @@ npx playwright test tests/example.spec.ts
 ## Project Structure
 
 ```
-├── tests            # Folder containing test files
-├── helpers            # Helper functions and utilities
-├── fixtures         # Test fixtures
-├── UI               # UI structure
-│   ├── pages        # Page objects
-│   └── components   # Reusable UI components
+├── src               # Main folder containing source code
+│   ├── data          # Static data, e.g., JSON files or test data
+│   ├── typedefs      # TypeScript types and interfaces
+│   ├── tests         # Folder containing test files
+│   ├── helpers       # Helper functions and utilities
+│   ├── fixtures      # Playwright fixtures for setup and teardown
+│   ├── UI            # UI structure
+│   │   ├── pages     # Page Object Model (POM)
+│       └── components # Reusable UI components
 ├── playwright.config.ts # Playwright configuration file
 ├── package.json
-├── tsconfig.json    # TypeScript configuration
+├── tsconfig.json     # TypeScript configuration
 └── README.md
 ```
 

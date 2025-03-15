@@ -2,12 +2,11 @@
   "compilerOptions": {
     "target": "es2019",
     "module": "commonjs",
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "experimentalDecorators": true
   },
-  "exclude": ["./node_modules"]
+  "exclude": ["./node_modules"],
 }
