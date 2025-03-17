@@ -21,19 +21,19 @@ npx playwright install
 ### Run All Tests
 
 ```bash
-npx playwright test
+npm run start
 ```
 
 ### Run Tests by Tag
 
 ```bash
-npx playwright test --grep @tagName
+npm run start -- --grep @tagName
 ```
 
 ### Run a Specific Test
 
 ```bash
-npx playwright test tests/example.spec.ts
+npm run start -- tests/example.spec.ts
 ```
 
 ## Project Structure
@@ -52,18 +52,4 @@ npx playwright test tests/example.spec.ts
 ├── package.json
 ├── tsconfig.json     # TypeScript configuration
 └── README.md
-```
-
-## Configuration
-Configuration can be adjusted in the `playwright.config.ts` file. Key settings include:
-
-- **`timeout`** — Test timeout duration
-- **`use`** — Global browser settings
-- **`projects`** — Parameters for running tests in different browsers
-
-## Useful Commands
-
-- **Run in UI Mode for Easy Navigation**
-```bash
-npx playwright test --ui
 ```

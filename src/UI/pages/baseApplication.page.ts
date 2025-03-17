@@ -1,6 +1,6 @@
 import { expect } from "@playwright/test";
 import { step } from "helpers";
-import { AssertToContainText } from "typedefs/playwright/expects.typedefs";
+import { AssertToContainText, AssertIsVisibleOptions } from "typedefs/playwright/expects.typedefs";
 import { Sidebar } from "UI/components/sidebar";
 import { BasePage } from "UI/pages/base.page";
 
@@ -22,8 +22,8 @@ export abstract class BaseApplicationPage extends BasePage {
 	}
 
 	@step()
-	async assertSuccessIsVisible() {
-		await expect(this.successMessage).toBeVisible({ timeout: 10 * 1000 });
+	async assertSuccessIsVisible(options: AssertIsVisibleOptions = {}) {
+		await expect(this.successMessage).toBeVisible({ timeout: 10 * 1000, ...options });
 	}
 
 	@step()
@@ -32,8 +32,8 @@ export abstract class BaseApplicationPage extends BasePage {
 	}
 
 	@step()
-	async assertInputErrorTextIsVisible() {
-		await expect(this.inputError).toBeVisible({ timeout: 10 * 1000 });
+	async assertInputErrorTextIsVisible(options: AssertIsVisibleOptions = {}) {
+		await expect(this.inputError).toBeVisible({ timeout: 10 * 1000, ...options });
 	}
 
 	@step()

@@ -13,3 +13,7 @@ export const overview = companyEndpoints(systimaas7, {
 export const accounting = companyEndpoints(systimaas7, {
 	postOtherFile: "/bookkeeping/purchase"
 });
+
+export const contacts = companyEndpoints(systimaas7, {
+	contacts: "/contacts",
+});

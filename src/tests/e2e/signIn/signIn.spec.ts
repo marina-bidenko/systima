@@ -2,7 +2,7 @@ import { faker } from "@faker-js/faker";
 import { loginPageErrors } from "data/errorMessages";
 import { test } from "fixtures";
 
-test.describe("Sign in", function () {
+test.describe("Sign in", () => {
 
 	test.beforeEach(async ({ application }) => {
 		await application.loginPage.visit();
