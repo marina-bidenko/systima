@@ -1,6 +1,6 @@
 import { contacts } from "data/urls/webUrls";
 import { step } from "helpers";
-import { NewContactDialog } from "UI/components/Dialogs/newContactDialog";
+import { NewContactDialog } from "UI/components/dialogs/newContactDialog";
 import { BaseApplicationPage } from "UI/pages/baseApplication.page";
 
 export class ContactPage extends BaseApplicationPage {

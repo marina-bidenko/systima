@@ -1,7 +1,7 @@
 import { expect } from "@playwright/test";
 import { step } from "helpers";
 import { AssertToContainText } from "typedefs/playwright/expects.typedefs";
-import { TwoButtonsDialog } from "UI/components/Dialogs/twoButtonsDialog";
+import { TwoButtonsDialog } from "UI/components/dialogs/twoButtonsDialog";
 
 export class NewContactDialog extends TwoButtonsDialog {
 	private inputError = this.page.locator(".error--text").getByRole("alert").first();

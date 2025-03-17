@@ -1,6 +1,6 @@
 import { step } from "helpers";
 import { TwoButtons } from "typedefs/main.typedefs";
-import { BaseDialog } from "UI/components/Dialogs/baseDialog";
+import { BaseDialog } from "UI/components/dialogs/baseDialog";
 
 export abstract class TwoButtonsDialog extends BaseDialog implements TwoButtons {
 	readonly submitBtn = this.container.locator(`button[type="submit"]`);

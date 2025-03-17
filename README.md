@@ -1,6 +1,6 @@
 # Systima
 
-This project uses Playwright for web application automation testing [Systima](https://app.staging.systima.no/) .
+This project uses Playwright for web application automation testing [Systima](https://app.staging.systima.no/).
 
 ## Installation
 
@@ -14,6 +14,22 @@ npm install
 
 ```bash
 npx playwright install
+```
+
+## Configuration
+
+1. Duplicate the `.env.example` file and rename it to `.env`:
+
+```bash
+cp .env.example .env
+```
+
+2. Add the required environment variables to the `.env` file:
+
+```env
+BASE_URL='https://staging.stg.qllaborate.com'
+USER_EMAIL='your-email@example.com'
+PASSWORD='your-password'
 ```
 
 ## Running Tests
@@ -53,3 +69,4 @@ npm run start -- tests/example.spec.ts
 ├── tsconfig.json     # TypeScript configuration
 └── README.md
 ```
+
