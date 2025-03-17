@@ -1,6 +1,6 @@
 import { overview } from "data/urls/webUrls";
-import { BasePage } from "UI/pages/base.page";
+import { BaseApplicationPage } from "UI/pages/baseApplication.page";
 
-export class DashboardPage extends BasePage {
+export class DashboardPage extends BaseApplicationPage {
 	readonly url = overview.dashboard;
 }

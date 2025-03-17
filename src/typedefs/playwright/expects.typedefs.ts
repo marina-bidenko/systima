@@ -3,3 +3,8 @@ export type AssertToContainText = {
 	timeout?: number | undefined,
 	useInnerText?: boolean | undefined
 }
+
+export type AssertIsVisibleOptions = {
+	timeout?: number,
+	visible?: boolean
+}
